@@ -1,0 +1,296 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background: #F3E5AB;
+    box-shadow: 0 0 10px rgba(0,0,0,.4);
+}
+.header .Logo{
+    color: #222;
+    font-size: 32px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.header a span{
+    color: green; /* title dish delight (delight warna hijau)*/
+}
+.header .navbar a{
+    color: #222;
+    text-decoration: none;
+    margin-left: 35px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;   
+}
+
+.activity-section i{
+    color: green; /*search, like & cart button*/
+    font-size: 25px;
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: .3s;
+}
+.activity-section i:hover{
+    background: green; /*transition bila cursor tunjuk search, like & cart button*/
+    color: white;
+}
+
+.btn{ /*coding for button login and view recipe (butter chicken)*/
+    height: 50px;
+    width: 140px;
+    border-radius: 250px;
+    background: green;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    border: 2px solid green;
+    cursor: pointer;
+    font-weight: 600;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+}
+.btn::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    height: 100%;
+    width: 00%;
+    z-index: -1;
+    transition: .3s;
+}
+.btn:hover:before{
+    width: 100%;
+}
+.btn:hover{
+    color: green;
+}
+.btn-explore{
+    background: transparent;
+    color: green;
+    margin-left: 20px;
+}
+.btn-explore::before{
+    background: green;   
+}
+.btn-explore:hover{
+    color: #fff;
+}
+section{
+    padding: 10rem 9% 2rem;
+    background: white
+}
+.home-section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-section .text-content h5{
+    font-size: 20px;
+    color: green;
+    font-weight: 500;
+}
+.home-section .text-content h2{
+    font-size: 75px;
+    color: #3d3f56;
+    font-weight: 600;
+}
+.home-section .text-content p{
+    max-width: 600px;
+    color: #222;
+    font-weight: 500;
+}
+.home-section .text-content .btn{
+    margin-top: 20px;
+}
+.home-section .image-section img{
+    width: 35vw; /* nanti recheck saiz image */
+    animation: Bounce 4s ease forwards infinite;
+}
+@keyframes Bounce{
+    0%{
+        transform: translateY(-24px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-24px);
+    }
+}
+.home-section .image-section .shadow{
+    background: rgba(0,0,0,.4);
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0,0,0,.4);
+    filter: blur(5px);
+    width: 35vw;
+    animation: BounceIn 4s ease forwards infinite;
+}
+@keyframes BounceIn{
+    0%{
+        transform: translateY(24px) scale(.5);
+    }
+    50%{
+        transform: translateY(0px) scale(1);
+    }
+    100%{
+        transform: translateY(24px) scale(.5);
+    }
+}
+.Recipes-Section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding: 10rem 0% 3rem;
+}
+.food-image img{
+    width: 300px;
+}
+.heading{
+    font-size: 36px;
+    text-align: center;
+}
+.heading span{
+    color: green;
+}
+.recipesGallery{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+.recipesGallery .food-image{
+    height: 320px;
+    width: 290px;
+    padding: 0 5px 0 0;
+    box-shadow: 0 0 3px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border-radius: 5px;
+    margin-left: 40px;
+}
+.food-image img{
+    height: 290px;
+    position: absolute;
+    top: -45%;
+}
+.inner-text{
+    margin-top: 110px;
+    text-align: center;
+}
+.inner-text h2{
+    font-size: 25px;
+}
+.inner-text p{
+    text-align: justify;
+    font-size: 12px;
+    max-width: 200px;
+    color: black; /*stop at 23.39*/
+}
+.recipe-section{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.recipe-section span{
+    height: 35px;
+    width: 90px;
+    border: 2px solid green;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: white;
+    cursor: pointer;
+}
+.recipe-section span::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: green;
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    transition: .3s;
+
+}
+.recipe-section span:hover::before{
+    width: 100%;
+    background: white;
+}
+.recipe-section span:hover{
+    color: green;
+}
+.about-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.dish-image{
+    height: 420px;
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 50px;
+    cursor: pointer;
+}
+.dish-image .image-1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white; /*background utk ckt*/
+    position: relative;
+    border-radius: 20px;
+    border: 5px solid green;
+}
+.image-1 img{
+    height: 450px;
+    position: absolute;
+    bottom: 0;
+}
