@@ -40,7 +40,11 @@ body{
     padding: 5px 10px;
     border-radius: 5px;   
 }
+.navbar a.active{
+    background: hotpink;
+    color: red;
 
+}
 .activity-section i{
     color: green; /*search, like & cart button*/
     font-size: 25px;
@@ -268,6 +272,15 @@ section{
     height: 100vh;
     flex-direction: column;
 }
+.about-section h2{
+    margin-bottom: 40px;
+}
+.about-section .editor-details{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+}
 .editor-image{
     height: 420px;
     width: 320px;
@@ -277,6 +290,10 @@ section{
     position: relative;
     bottom: 50px;
     cursor: pointer;
+}
+.editor-image-2{
+    position: relative;
+    top: 10px;
 }
 .editor-image .image-1{
     height: 100%;
@@ -294,7 +311,7 @@ section{
     height: 380px;
     position: absolute;
     bottom: 0;
-}  
+}
 .text-content-1{
     height: 100%;
     width: 100%;
@@ -331,4 +348,97 @@ section{
 .text-content-1 .text-p{
     font-size: 12px;
     font-weight: normal;
+}
+.facility-section{
+    height: 60vh;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.icon-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+    width: 100%;
+
+}
+.icon-text{
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid hotpink;
+    cursor: pointer;
+    flex-direction: column;
+    margin-top: auto 10px;
+    scale: 0.9;
+    transition: .3s;
+}
+.icon-text:hover{
+    scale: 1;
+    border: 2px solid yellow;
+}
+.icon-text i{
+    font-size: 40px;
+    color: green;
+
+}
+.icon-text p{
+    color: black;
+    font-size: 13px;
+    max-width: 300px;
+    margin-top: 10px;
+
+}
+footer{
+    height: 15vh;
+    background: white;
+    padding: 20px 60px;
+}
+.inner-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.inner-item h2{
+    color: green;
+}
+.inner-item .textbar a{
+    text-decoration: none;
+    color: green;
+    margin-left: 35px;
+}
+.inner-item .footer-icon i{
+    padding: 5px;
+    font-size: 25px;
+    margin-left: 20px;
+    background: #F3E5AB;
+    border-radius: 50%;
+    color: green;
+
+}
+footer .logo-1{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+footer .inner-item .logo-1 span{
+    color: green;
+}
+footer p{
+    font-size: 16px;
+    color: green;
+    margin: 20px auto;
+    font-weight: 500;
+    text-align: center;
 }
