@@ -16,11 +16,12 @@ body{
     left: 0;
     padding: 20px 10%;
     display: flex;
-    justify-content: space-between;
     width: 100%;
+    justify-content: center;
     align-items: center;
     background: #F3E5AB;
     box-shadow: 0 0 10px rgba(0,0,0,.4);
+    z-index: 100;
 }
 .header .Logo{
     color: #222;
@@ -31,34 +32,22 @@ body{
 .header a span{
     color: green; /* title dish delight (delight warna hijau)*/
 }
-.header .navbar a{
-    color: #222;
+.navbar a{
+    color: green;
     text-decoration: none;
     margin-left: 35px;
     font-size: 18px;
     font-weight: 500;
     padding: 5px 10px;
-    border-radius: 5px;   
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
 }
 .navbar a.active{
-    background: hotpink;
-    color: red;
+    background: green;
+    color: #F3E5AB;
 
 }
-.activity-section i{
-    color: green; /*search, like & cart button*/
-    font-size: 25px;
-    margin-left: 20px;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 50%;
-    transition: .3s;
-}
-.activity-section i:hover{
-    background: green; /*transition bila cursor tunjuk search, like & cart button*/
-    color: white;
-}
-
 .btn{ /*coding for button login and view recipe (butter chicken)*/
     height: 50px;
     width: 140px;
@@ -128,6 +117,7 @@ section{
     max-width: 600px;
     color: #222;
     font-weight: 500;
+    text-align: justify;
 }
 .home-section .text-content .btn{
     margin-top: 20px;
@@ -206,7 +196,7 @@ section{
     margin-left: 40px;
 }
 .food-image img{
-    height: 290px;
+    height: 250px;
     position: absolute;
     top: -45%;
 }
@@ -221,7 +211,7 @@ section{
     text-align: justify;
     font-size: 12px;
     max-width: 200px;
-    color: black; /*stop at 23.39*/
+    color: black;
 }
 .recipe-section{
     margin-top: 10px;
@@ -265,6 +255,20 @@ section{
 .recipe-section span:hover{
     color: green;
 }
+.recipe-arrow{
+    width: 50px;
+    margin-left: 20px;
+    background: transparent;
+    outline: transparent;
+    border: none;
+    cursor: pointer;
+}
+.recipe-arrow i{
+    font-size: 50px;
+    background: green;
+    color: #F3E5AB;
+    border-radius: 50%;
+}
 .about-section{
     display: flex;
     justify-content: space-between;
@@ -304,7 +308,7 @@ section{
     background: #c1c1c1;
     position: relative;
     border-radius: 20px;
-    border: 10px solid red;
+    border: 2px solid green;
     overflow: hidden;
 }
 .image-1 img{
@@ -343,15 +347,17 @@ section{
     max-width: 400px;
     font-size: 15px;
     font-weight: 500px;
-    color: #555;
+    color: black;
+    text-align: justify;
 }
 .text-content-1 .text-p{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: normal;
+    text-align: justify;
 }
 .facility-section{
     height: 60vh;
-    text-align: center;
+    text-align: justify;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -375,7 +381,7 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 2px solid hotpink;
+    border: 2px solid #F3E5AB;
     cursor: pointer;
     flex-direction: column;
     margin-top: auto 10px;
@@ -384,7 +390,7 @@ section{
 }
 .icon-text:hover{
     scale: 1;
-    border: 2px solid yellow;
+    border: 2px solid green;
 }
 .icon-text i{
     font-size: 40px;
@@ -393,13 +399,14 @@ section{
 }
 .icon-text p{
     color: black;
-    font-size: 13px;
+    font-size: 16px;
     max-width: 300px;
     margin-top: 10px;
+    text-align: justify;
 
 }
 footer{
-    height: 15vh;
+    height: 20vh;
     background: white;
     padding: 20px 60px;
 }
@@ -424,7 +431,12 @@ footer{
     background: #F3E5AB;
     border-radius: 50%;
     color: green;
-
+    cursor: pointer;
+    transition: .5s;
+}
+.inner-item .footer-icon i:hover{
+    background: green;
+    color: #F3E5AB;
 }
 footer .logo-1{
     color: black;
@@ -435,6 +447,7 @@ footer .logo-1{
 footer .inner-item .logo-1 span{
     color: green;
 }
+
 footer p{
     font-size: 16px;
     color: green;
